@@ -1,4 +1,4 @@
-import profilePicture from "../assets/profile-picture.png";
+import profilePicture from "../assets/profile-picture.jpg";
 import "../styles/Header.css"
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header>
         <div className="header-jumbotron">
-            <img src={profilePicture} alt="image-profile" />
+            <img src={profilePicture} style={{ borderRadius: "50%"}} alt="image-profile" />
             <h3>Hendra Kusuma</h3>
             <p>Programmer - Content Creator - Researcher</p>
             <div className="socialMedia">
