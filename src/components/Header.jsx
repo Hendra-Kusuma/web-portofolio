@@ -1,9 +1,9 @@
 import profilePicture from "../assets/profile-picture.jpg";
 import "../styles/Header.css"
 import { FaInstagram } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -13,12 +13,10 @@ export default function Header() {
             <h3>Hendra Kusuma</h3>
             <p>Programmer - Content Creator - Researcher</p>
             <div className="socialMedia">
-              <a href=""><FaInstagram /></a>
-              <a href=""><FaTiktok /></a>
-              <a href=""><FaTwitter /></a>
-              <a href=""><FaFacebook /></a>
+              <Link to="https://www.instagram.com/hendra_abu_humaira_raihan/"><FaInstagram /></Link>
+              <Link to="https://x.com/hendra___kusuma"><FaTwitter /></Link>
+              <Link to="https://www.facebook.com/henzo.hoshi/"><FaFacebook /></Link>
             </div>
-            
         </div>
     </header>
   )
